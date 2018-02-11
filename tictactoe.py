@@ -1,7 +1,7 @@
-row1 = ['_','_','_']
+row1 = ['_','_','_'] # Start off the rows empty 
 row2 = ['_','_','_']
 row3 = ['_','_','_']
-matrix = [row1,row2,row3]
+matrix = [row1,row2,row3] # turn the rows into a matrix
 player1 = ['1',' ']
 player2 = ['2',' ']
 done = False
@@ -9,7 +9,7 @@ nturns = 0
 #-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 #-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~-~
 
-def print_board():
+def print_board(): # prints the board which is a combination of row 1 2 3 
 	for i in matrix:
 		print(i)
 
@@ -25,7 +25,7 @@ def user_turn(player_turn):
 	print("Player ", player_turn[0], "'s turn\n")
 
 	while 1:
-		row = int(input("Pick a position (Row): "))
+		row = int(input("Pick a position (Row): ")) # ask users to input a column and row for their symbol
 		col = int(input("Pick a position (Col): "))
 		if col > 2 or row > 2:
 			print("Out of bounds...(values are from 0 to 2), Try again..")
