@@ -132,7 +132,7 @@ while 1:
 	else:
 		print("Invalid value, please try again...")
 
-while done!= True:
+while done!= True: 
 	print('\n')
 	print_board()
 	print('\n')
@@ -140,9 +140,9 @@ while done!= True:
 	if done != True:
 		user_turn(turn)
 
-	check_winner()
+	check_winner()  # constantly checks if we have a winner
 	nturns += 1
 
-	if nturns == 9:
+	if nturns == 9: # cant fill out more than 9 slots, so if nobody won by then its a cats game
 		print("Cats Game!")
 		break;
