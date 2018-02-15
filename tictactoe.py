@@ -64,8 +64,8 @@ def check_winner():
 	else:
 		turn = player1
 
-	if matrix[1][0] == matrix[1][1] == matrix[1][2] and matrix[1][0] != '_':
-		done = True
+	if matrix[1][0] == matrix[1][1] == matrix[1][2] and matrix[1][0] != '_': # if it isnt _ than it is either a o or x
+		done = True                                                       # checks win as a row, column, or diagonally
 		print('\n')
 		print_board()
 		print("\nPlayer ",turn[0],"s' the winner!")
